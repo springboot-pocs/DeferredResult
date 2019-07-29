@@ -16,3 +16,10 @@ This has been proven by sleeping our processing for X seconds.
 
 As a result Postman ( client ) also waits for X+ seconds for response.
 
+# Behaviour on timeout 
+we can specify desired time beyond which the client should not wait.
+in such cases we can decide ( on timeout ) what response we want to send .
+NOTE - that even though we send a timeout response to client - the processing of the task which was spawaned in a separate thread will continue.
+So the background task could very well complete successfully only thing is that due to timeout we would not know if it succeeded or failed.
+Timeout is useful so that end user / consumer of our rest service does not wait for infinite time.
+
