@@ -2,7 +2,8 @@
 This is a Spring Boot project being used to explore Deferred Result in spring boot
 
 # URL to test:
-  http://localhost:6060/dfr/getResults   ( this is a GET request ) 
+  http://localhost:6060/dfr/getResults   				( this is a GET request with positive scenario ) 
+  http://localhost:6060/dfr/getTimeoutResults			( this is a GET request to test onTimeout behaviour )
   
 
 # Behaviour
